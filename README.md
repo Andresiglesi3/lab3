@@ -65,12 +65,26 @@ For each of the 6 pieces evaluated in the polymorphic loop, display:
 ## Git Workflow
 Create a feature branch for your assigned files, test compilation locally, and submit a pull request against `main`:
 
+0. Update your local main branch first
+Before doing anything, switch to main and pull the latest changes from GitHub:
+
 ```bash
-# Option A
-git checkout -b feature/foundation-chessboard
+git checkout main
+git pull origin main
 
-# Option B
-git checkout -b feature/pieces-pawn-knight-bishop
+1.  Create a GitHub branch
+Make sure your local `main` is updated and create your branch depending on your assigned files:
+```bash
+git checkout main
+git pull origin main
 
-# Option C
-git checkout -b feature/pieces-chain-main# lab3
+git checkout -b nameofyourbranch
+git status
+git add .
+git commit -m " "
+git push u origin nameofyourbranch
+
+2. Open a pull request > Compare & pull request
+3. Merge into main > confirm merge
+4. git checkout main
+5. git pull origin main
